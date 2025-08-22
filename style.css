@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+:root {
+  --primary-color: #24f8c7;
+  --secondary-color: #fff;
+  --text-color: #000000;
+}
+
+.heading,
+.section-heading,
+.about-title {
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  /* margin-top: 100px; */
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.about-title {
+  margin: 15px 0;
+  line-height: unset;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .heading,
+  .section-heading,
+  .about-title {
+    /* text-align: center; */
+    font-size: 47px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 15px;
+  }
+}
+/* h2 for every heading */
+/* .section-heading {
+  margin: 15px 0;
+  line-height: unset;
+} */
+
+.section-subheading,
+.course-description,
+.facility-description,
+.about-text,
+.testimonial-text,
+.footer-text {
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  /* padding: 10px; */
+  /* text-align: center;
+    margin-bottom: 20px; */
+}
+.section-subheading {
+  text-align: center;
+}
+.facility-description {
+  text-align: left;
+}
+.about-text {
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .about-text {
+    padding: 15px 0 25px;
+  }
+}
+.footer-text {
+  padding: 10px;
+}
+.blue-border-button {
+  border: 1px solid #5236f4;
+  color: #5236f4;
+  background: transparent;
+  padding: 12px 34px;
+  border-radius: 5px;
+  font-size: 13px;
+  margin-bottom: 30px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.blue-border-button:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-color: var(--primary-color);
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+/* contactform error-message */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
